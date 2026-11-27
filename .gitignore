@@ -1,0 +1,29 @@
+# Datasets: every file is over GitHub's 100 MB limit.
+# They live in the Databricks volume; see data/README.md to recreate them.
+data/*
+!data/README.md
+paysim_*.csv
+paysim_*.json
+PS_*.csv
+*.zip
+*.gz
+calibration.json
+calibration.ids.npy
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Spark (local runs)
+spark-warehouse/
+metastore_db/
+derby.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
